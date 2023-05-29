@@ -1,0 +1,78 @@
+<div class="page page-station">
+        <nav class="nav2">
+            <div class="retour_home">
+                <i style="color: white" class="fas fa-arrow-circle-left" ng-click="goTo('home')"></i>
+            </div>
+            <div class="station_title" ng-init="station_uid = main.$route.current.params.stationUid; " style="">
+                {{ stations[station_uid].nom }}
+            </div>
+        </nav>
+
+
+        <div class="page-station-content">
+            <div class="desc_station">
+            <div class="forfaits">
+                <div class="txt_circle">
+                    <p>Répartition des pistes</p>
+                </div>
+                <div class="color_circle">
+                    <div class="circle">
+                        <i style="color : green" class="fas fa-circle"></i>
+                        <i style="color : blue" class="fas fa-circle"></i>
+                        <i style="color : red" class="fas fa-circle"></i>
+                        <i style="color : black" class="fas fa-circle"></i>
+                        <!--<i class="fas fa-circle"></i>-->
+                    </div>
+                    <div class="prct">
+                        <p style="color : green"> {{ stations[station_uid].verte_ouvert }}</p>
+                        <p style="color : blue"> {{ stations[station_uid].bleu_ouvert }}</p>
+                        <p style="color : red"> {{ stations[station_uid].rouge_ouvert }}</p>
+                        <p style="color : black"> {{ stations[station_uid].noir_ouvert }}</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="station-sections" ng-init="station_uid = main.$route.current.params.stationUid; ">
+                <div class="boxshad">
+                    <p class="station-weather weather-icon">
+                        <i class="fas fa-{{ stations[station_uid].meteo }}"
+                            style="color: {{ color(stations[station_uid].meteo) }}"></i>
+                    </p>
+                    <p class="station-weather" id="page2">
+                        {{ stations[station_uid].temp_min }}/{{stations[station_uid].temp_max}}°C </p>
+                </div>
+
+                <div class="boxshad" id="quant">
+                    <p class="p_pistes_ouvertes">{{ stations[station_uid].km_total}}</p>
+                    <p class="pistes_ouvertes"> de pistes</p>
+                    <p class="p_remontees_ouvertes">{{ stations[station_uid].remontee_total }}</p>
+                    <p class="remontees_ouvertes">Remontées mécaniques</p>
+                </div>
+
+                <div class="boxshad" id="prix">
+                    <p class="text_journee">1 journée / 1 adulte</p>
+                    <p class="prix">{{stations[station_uid].prix}}€</p>
+                    <p class="boxshad" id="detail">Voir en détail</p>
+                </div>
+
+                <div class="boxshad" id="neige">
+                    <p class="text_neige">Eneigement Altitude Min / Max</p>
+                    <p class="alt">{{stations[station_uid].alt_bas}} M {{stations[station_uid].neige_bas}}</p>
+                    <p class="alt">{{stations[station_uid].alt_haut}} M {{stations[station_uid].neige_haut}}</p>
+                </div>
+
+                <div class="boxshad" id="prix">
+                    <p class="inf"><a class="fas fa-info" style="color: #d3d3d3c9"
+                            href="{{ stations[station_uid].lien_site}}"></a></p>
+                    <!--<p>Plus d'infos</p>-->
+                </div>
+
+                <div class="boxshad" id="prix">
+                    <p class="text_journee">Dernière maj</p>
+                    <p class="prix">{{stations[station_uid].date_maj}}</p>
+
+                </div>
+                </div>
+        </div>
+    </div>
+</div>

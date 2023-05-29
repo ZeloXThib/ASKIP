@@ -1,0 +1,21 @@
+<div class=scroll>
+<div class="page page-home" ng-init="isLogged()"> 
+
+    <div class="header">
+        <div class="nav"> 
+            <div class="nav-btn" ng-click="client('logout')"><i class="fas fa-power-off"></i></div> 
+            <div></div>  
+            <div class="nav-btn nav-btn-primary"><i class="far fa-bookmark"></i></i></div>
+        </div>
+
+        <input class="search" type="text" 
+        placeholder="Rechercher une station..."
+        ng-model="filter_name">
+
+    </div>
+    
+    <div class="stations_list" ng-include=" 'strct/station_card.html' "> </div>
+</div>
+
+
+

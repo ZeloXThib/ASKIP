@@ -1,0 +1,36 @@
+<meta charset="utf-8"> 
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="libs/style/login.css">  
+<link rel="stylesheet" href="libs/style/home.css">   
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"  rel="stylesheet"> 
+ <!-- FONTAWESOME -->
+<script src="https://kit.fontawesome.com/d7a158b5fb.js" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>  
+<script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>  
+<script src="libs/toArrayFilter.js"></script>
+
+ 
+
+<body  
+    ng-app="skiApp" ng-controller="mainCtrl as main">
+
+    <div class="alert-container" id="alert"
+        ng-click="closeAlert()"> 
+        <div class="alert-card">
+            <div id="alert-message"></div> 
+        </div>
+         
+        
+    </div> 
+    <div class="app" ng-view></div>  
+
+</body>
+
+<script src="app/app.js"></script> 

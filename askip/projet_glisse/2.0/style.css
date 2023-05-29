@@ -1,0 +1,516 @@
+:root {
+    --gap : 40px;
+    --clr-main : /* rgb(52, 152, 219, 1); */ #0F2888;
+    --couleur-back : #edf2fb;
+    --couleur-card : white;
+}  
+
+body {
+    font-size: 4em;   font-family: 'Ubuntu', sans-serif; 
+    margin :0; 
+    background-color: var(--couleur-back);
+}     
+
+.navigation {
+    background-color: var(--clr-main);
+    padding: 10px 20px;
+    position : fixed;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    font-size: 170%;
+    
+    
+}
+
+.nav2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: var(--clr-main);
+    padding: 20;
+    margin-bottom: 5%;
+    font-size: 170%;
+    
+}
+
+.station_title {
+    text-align: center;
+    display: flex;
+    justify-content: CENTER;
+    align-items: center;
+    color: white; 
+}
+
+.deco {
+    text-align: right;
+    font-size: 90%;
+}
+.station-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.station-sections:first-child {
+    margin-top: 180px;
+}
+
+
+.station-alt {
+    font-size: 51%;
+    display: flex;
+    text-align: left;
+    
+}
+
+.desc-acc {
+    margin-top: 5%;
+    padding: 2%;
+}
+
+.home {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+}
+
+.search {
+    width: 100%;
+    font-size: 50%;
+    outline: none;
+    border-radius: 50px;
+    padding: 10px 40px;
+}
+
+
+.boxshad {
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1);   
+    border-bottom: 1px;
+}
+
+.boxshad#quant {
+    text-align: center;
+    font-size: 50%;
+}
+
+.boxshad#prix {
+    text-align: center;
+    font-size: 75%;
+}
+
+
+.text_journee {
+    font-size: 65%;
+}
+
+.text_journee#haut {
+    font-size: 65%;
+}
+
+.prix {
+    color: var(--clr-main);
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.boxshad#detail {
+    background-color: #d3d3d3c9;
+    font-size: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.p_pistes_ouvertes {
+    color: var(--clr-main);
+    font-size: 150%;
+    font-weight: bold;
+    
+}
+
+.p_remontees_ouvertes {
+    color: var(--clr-main);
+    font-size: 150%;
+    font-weight: bold;
+}
+
+
+.page-home {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap); 
+}
+        
+.station-card {
+    background-color: var(--couleur-card);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding: 40px;
+    border-radius: 20px; 
+
+} 
+
+
+.station-name {
+    color: var(--clr-main);
+    font-size: 90%; 
+    border-bottom: solid;
+    padding: 5%;
+}
+
+
+.station-right {
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 35%;
+    
+}
+
+.station-weather {
+    display: flex;
+    justify-content: center;
+    font-size: 60%;
+}
+
+.weather-icon {
+    font-size: 160%; 
+    display: flex;
+}
+
+
+
+
+
+.station-sections div {
+    height: 400px;  
+}
+
+
+
+ .station-weather#page2 {
+    color: var(--clr-main);
+    font-size: 100%;
+    font-weight: bold;
+ }
+
+ .boxshad#neige {
+    text-align: center;
+    font-size: 70%;
+ }
+ .text_neige {
+    margin-left: 0.8%;
+    margin-right: 0.8%;
+ }
+ .alt {
+    color: 	#808080;
+ }
+
+
+ .boxshad#retour {
+    text-align: center;
+    background-color: #d3d3d3c9;
+    font-size: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 10px;
+    border-radius: 10px;
+ }
+
+ .inf {
+     font-size: 300%;
+ }
+
+ .forfaits {
+    text-align: center;
+    box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 10%);
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    height: 6em;
+    font-size: 70%;
+ }
+
+ .color-circle {
+     font-size: 200%;
+ }
+
+ .circle {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+
+ .prct {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+/*
+ .forfaits:first-child {
+     padding-top: 1px;
+ }
+ .forfaits:last-child {
+    padding-bottom: 1px;
+}
+*/
+ .prix_left {
+    
+    float: left;
+    text-align: center;
+    margin-top: 4%;
+    font-size: 50%;
+    
+ }
+ .prix_right {
+     margin-top: 4%;
+     font-size: 50%;
+ }
+ #prix-acc {
+    margin-top: 10%;
+ }
+/*
+ .prix_right {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 10%;
+    float: right;
+    text-align: center;
+    vertical-align: bottom;
+    
+ }
+*/
+ .switch {
+    position: relative;
+    width: 65%;
+    height: 80%;
+    margin-top: 3%;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 80%;
+    width: 35%;
+    left: 5%;
+    bottom: 10%;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  
+  input:checked + .slider {
+    background-color: #f32121;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #f32121;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(150%);
+    -ms-transform: translateX(150%);
+    transform: translateX(150%);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/* Partie formulaire inscription */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+/*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}*/
+.test{
+ text-align: center;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  align-items: center;
+  background-color: #E1E8EE;
+ /* background: -webkit-linear-gradient(left, #4c9bf7, #bfd9f0);*/
+  font-family: "Fira Sans", Helvetica, 
+}
+
+.form-structor {
+	background-color: /*#222;*/#0F2888;
+	border-radius: 15px;
+	height: 50%;
+	width: 80%;
+	position: relative;
+	overflow: hidden;
+    margin-left: 10%;
+}
+
+.input {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    display: block;
+    height: 15%;
+    line-height: 30px;
+    border-bottom: 1px solid #eee;
+    width: 90%;
+    font-size: 50%;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-bottom: 4%;
+   
+    
+}
+
+#login {
+    text-align: center;
+    color: white;
+}
+
+.class-btn {
+    text-align: center;
+}
+
+.submit-btn {
+    text-align: center;
+    width: 35%;
+    height: 10%;
+    font-size: 50%;
+    border-radius: 15px;
+}
+
+.pasCompte {
+    color: white;
+    text-align: center;
+    font-size: 60%;
+}
+
+.couleur-lien {
+    color: rgb(120, 173, 231);
+}
+
+
+/* Thomas */
+
+.alert-container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    z-index: 2; 
+
+    display: none;
+    transition: 1s; 
+
+}
+
+.alert-card {
+    background-color: rgb( 241, 148, 138 );
+    margin: 50px;
+    padding: 20px 40px;
+    border-radius: 30px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border: 8px solid rgb( 231, 76, 60 );
+}
+ 
+
+
+
+.app {
+    position: fixed;
+
+    width: 100vw; height: 100vh; 
+}
+
+.logo {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 800px;
+}
+
+.page-client {
+    display: grid;
+    grid-template-rows: 40% 1fr;
+    height: 100%;
+
+    background-image: url('img/client-back.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.form {
+    background-color: white;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    padding: 150px 100px;
+
+}
+
+
+
+.form-input {
+    background-color: rgb( 242, 243, 244 );  
+    font-size: 40px;
+    width: 100%;
+    padding: 25px 50px;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 40px;
+}
+
+.form-p {font-size: 40px;}
+
+.form-btn {
+    display: flex;
+    justify-content: center;
+    background: rgb( 93, 173, 226 );
+    color: white;
+    padding: 30px;
+    border-radius: 40px;
+    font-size: 50px;
+    margin-top: 100px;
+}
+.scroll {
+    overflow-y: scroll;
+}

@@ -1,0 +1,52 @@
+
+<!-- CARTE PAR STATION -->
+<div class="station-card boxshad" 
+ng-repeat="station in stations | toArray:false | filter : filter_name : nom" 
+    ng-click="gotoStation(station.station_uid)">   
+    
+ <!-- DIV GAUCHE -->
+    <div class="station-left">
+        
+        <!-- 1er ligne taille 80% -->
+        <div class="station-name"
+            style=""> <!-- "font-size: transformNameInSize({{station.nom}})" -->
+            {{ station.nom }} 
+        </div>
+        
+        <!-- 2eme ligne taille 20% -->
+        <div class="station-alt"> 
+            
+            <!-- 1er colonne taille 1fr -->
+            <div class="desc-acc" id="alt-min">
+                <i class="fas fa-skiing" style="color: #0F2888"></i>
+                {{ station.km_total }}
+            </div>
+            
+            <!-- 2eme colonne taille 1fr -->
+            <div class="desc-acc" id="alt-max">
+                <i class="fas fa-map-marked-alt" style="color: #0F2888"></i>
+                {{ station.domaine}}
+            </div>
+            
+            <!-- 3eme colonne taille 1fr -->
+            <div class="desc-acc" style=""> <!--station-weather -->
+                {{ station.temp_min }}/{{station.temp_max}}°C
+            </div>
+            
+        </div>
+    </div>
+
+<!-- DIV DROITE -->
+    <div class="station-right">
+        <div class="station-weather weather-icon" style=""> 
+            <i class="fas fa-{{ station.meteo }}" style="color: {{ color(station.meteo) }}"></i>  
+        </div>
+        <div id="prix-acc">
+                {{station.prix}}   
+                <i class="fas fa-euro-sign" style="color: #0F2888"></i>
+
+        </div>
+    </div>
+        
+    </div>
+</div>  

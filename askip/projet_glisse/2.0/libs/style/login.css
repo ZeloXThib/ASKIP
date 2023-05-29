@@ -1,0 +1,164 @@
+/* Thomas */
+
+.alert-container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    z-index: 2; 
+
+    display: none;
+    transition: 1s; 
+
+}
+
+.alert-card {
+    background-color: rgb( 241, 148, 138 );
+    margin: 50px;
+    padding: 20px 40px;
+    border-radius: 30px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border: 8px solid rgb( 231, 76, 60 );
+} 
+ 
+
+
+
+.app {
+    position: fixed;
+
+    width: 100vw; height: 100vh; 
+}
+
+.logo {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 600px; 
+    transform: translateY(50px);
+}
+
+
+.page {
+    height: 100%;
+}
+
+.page-client {
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+    background-image: url('../../img/client-back.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+.page-home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.page-station {
+    display: grid; 
+    grid-template-rows: auto 1fr; 
+}
+
+.page-station-content {
+    overflow-y: scroll; 
+
+    padding-top: 40px; 
+    padding-bottom: 500px;
+}
+
+/* ==========  PAGE HOME =========== */ 
+
+.header {
+    padding: 0 100px;
+}
+
+.header .nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto; 
+
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+.header .nav .nav-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-btn i {
+    background-color: var(--clr-main); color: white; 
+    padding: 20px; 
+    border-radius: 50%;
+    height: 80px; width: 80px; 
+    display: flex; justify-content: center; align-items: center;
+
+    font-size: 45px; 
+}
+
+
+.header .search {
+    border: none; outline: none;
+
+    background-color: white;
+
+    padding: 30px 80px;
+    margin: 40px 0;
+}
+
+
+
+
+/* ==========  PAGE LOGIN =========== */ 
+
+.form {
+    background-color: white;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    padding: 100px 100px;
+    padding-bottom: 400px; 
+
+    animation: anim-login 1s forwards;
+}
+
+@keyframes anim-login {
+    from {transform: translateY(400px); }
+    to {transform: translateY(0); }
+}
+
+.form-title {
+    margin-bottom: 80px;
+    display: flex; 
+    justify-content: center;  
+}  
+
+.form-input {
+    background-color: rgb( 242, 243, 244 );  
+    font-size: 40px;
+    width: 100%;
+    padding: 25px 50px;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 40px;
+}
+
+.form-p {font-size: 40px;}
+
+.form-btn {
+    display: flex;
+    justify-content: center;
+    background: rgb( 93, 173, 226 );
+    color: white;
+    padding: 30px;
+    border-radius: 40px;
+    font-size: 50px;
+    margin-top: 100px; 
+    
+    /* fix barre de navigation sur mobile qui cache une partie du login */ 
+    margin-bottom: 200px; 
+}
